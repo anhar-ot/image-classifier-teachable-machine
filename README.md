@@ -1,6 +1,4 @@
-# Image Classification with Teachable Machine
-
-This project trai# Image Classification with Teachable Machine
+# # Image Classification with Teachable Machine
 
 This project trains an image recognition model to classify images into two classes — **Cat** and **Cow** — using Google's Teachable Machine, then loads the exported model in Python to make predictions on new images.
 
@@ -15,8 +13,8 @@ This project trains an image recognition model to classify images into two class
 
 - `keras_model.h5` — The trained Keras model exported from Teachable Machine
 - `labels.txt` — Class labels corresponding to the model's output
-- `CatOrCow.ipynb` — Colab notebook used to load the model and run predictions
-- `result.png` — Screenshot of a successful prediction run
+- `catorcow.py` — Python script used to load the model and run predictions
+- `screenshot.png` — Screenshot of a successful prediction run
 
 ## How It Was Trained
 
@@ -41,7 +39,7 @@ This project trains an image recognition model to classify images into two class
    os.environ["TF_USE_LEGACY_KERAS"] = "1"
    ```
    Then restart the runtime (**Runtime → Restart session**) and re-run the cells above.
-5. Open `CatOrCow.ipynb` and run the prediction cell
+5. Paste the prediction code from `CatOrCow.py` into a new cell
 6. Update the `IMAGE_PATH` variable to match your uploaded image's filename
 7. Run the cell — the predicted class and confidence score will be printed below it
 
