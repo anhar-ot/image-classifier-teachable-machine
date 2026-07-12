@@ -1,4 +1,4 @@
-# # Image Classification with Teachable Machine
+## Image Classification with Teachable Machine
 
 This project trains an image recognition model to classify images into two classes — **Cat** and **Cow** — using Google's Teachable Machine, then loads the exported model in Python to make predictions on new images.
 
@@ -47,3 +47,4 @@ This project trains an image recognition model to classify images into two class
 
 - Input images are automatically resized to 224×224 pixels to match the model's expected input size, as required by Teachable Machine.
 - The `TF_USE_LEGACY_KERAS` fix addresses a compatibility issue between Teachable Machine's older Keras export format and the newer Keras 3 engine used by default in current Colab environments.
+](https://github.com/anhar-ot/image-classifier-teachable-machine)
