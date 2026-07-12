@@ -14,7 +14,7 @@ This project trains an image recognition model to classify images into two class
 - `keras_model.h5` — The trained Keras model exported from Teachable Machine
 - `labels.txt` — Class labels corresponding to the model's output
 - `catorcow.py` — Python script used to load the model and run predictions
-- `screenshot.png` — Screenshot of a successful prediction run
+- `result.png` — Screenshot of a successful prediction run
 
 ## How It Was Trained
 
@@ -39,7 +39,7 @@ This project trains an image recognition model to classify images into two class
    os.environ["TF_USE_LEGACY_KERAS"] = "1"
    ```
    Then restart the runtime (**Runtime → Restart session**) and re-run the cells above.
-5. Paste the prediction code from `CatOrCow.py` into a new cell
+5. Paste the prediction code from `catorcow.py` into a new cell
 6. Update the `IMAGE_PATH` variable to match your uploaded image's filename
 7. Run the cell — the predicted class and confidence score will be printed below it
 
@@ -47,4 +47,3 @@ This project trains an image recognition model to classify images into two class
 
 - Input images are automatically resized to 224×224 pixels to match the model's expected input size, as required by Teachable Machine.
 - The `TF_USE_LEGACY_KERAS` fix addresses a compatibility issue between Teachable Machine's older Keras export format and the newer Keras 3 engine used by default in current Colab environments.
-](https://github.com/anhar-ot/image-classifier-teachable-machine)
